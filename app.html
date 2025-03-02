@@ -1,7 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wishlist</title>
-    <script type='module' defer src='scripts/pages/app.js'></script>
+    <link rel="stylesheet" href="styles/app.css">
+    <script type='module' defer src="scripts/pages/app.js"></script>
+<script src="script.js" defer></script>
 </head>
 <body>
+    <main>
+        <ul id="cardsContainer"></ul>
+        <dialog>
+            <div class="dialog-body">
+                <span class="close-bttn">x</span>
+                <section class="header">
+                    <div>
+                    <img src="https://m.media-amazon.com/images/I/81CsBn8fyiL.__AC_SY300_SX300_QL70_ML2_.jpg">
+                    <h1 class="prod-name">${name}</h1>
+                    </div>
+                    <section class="prod-price">
+                    <span class="currency">us$</span>
+                    <span>${price}</span>
+                    </section>
+                </section>
+            
+                <table>
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th>${key1}</th>
+                        <td>${value1}</td>
+                    </tr>
+                    <tr>
+                        <th>${key2}</th>
+                        <td>${value1}</td>
+                    </tr>
+                    <tr>
+                        <th>${key1}</th>
+                        <td>${value1}</td>
+                        <td>${value2}</td>
+                        <td>${value3}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dialog>
+      </main>
+    
 </body>
-
